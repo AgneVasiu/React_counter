@@ -1,0 +1,56 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main{
+    background: violet;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-header{
+    background-color: coral;
+    padding: 30px;
+}
+
+.main-header > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.main-header > ul > li{
+ outline: none;
+ text-decoration: none;
+ list-style: none;
+ font-size: 25px;
+ cursor: pointer;
+
+}
+
+.counter-parent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.counter-parent h3{
+    font-size: 30px;
+}
+
+.counter-parent button{
+    background: transparent;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin-top: 5px;
+}
