@@ -12,6 +12,7 @@ function Counter(){
         <>
             <div className="counter-parent">
                 <div className="main-div">
+                  
                     <h3>Counter</h3>
                     <button onClick={handleclick}>{currentstate}</button>
                 </div>
