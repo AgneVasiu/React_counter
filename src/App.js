@@ -1,19 +1,55 @@
 import React from "react";
 import './App.css';
-import Header from "./Components/Header";
-import Counter from "./Components/Counter";
 import "./Counter.css";
-
+import Home from "./Components/Home";
+import About from "./Components/About";
+import {Routes,Route} from "react-router-dom";
+import Header from "./Components/Header";
+import Error from "./Components/Errorpage";
+import Counter from "./Components/Counter";
 
 function App(){
  return(
     <>
-        <div className="main">
-            <Header />
-            <Counter />
-            
+        <Routes>
 
-        </div>
+            <Route
+                path="/"
+                element={
+                    <>
+                    <Header />
+                    <Home />
+                    </>
+                }
+
+            />
+                <Route
+                path="/counter"
+                element={
+                    <>
+                    <Header/>
+                    <Counter/>
+                    </>
+                }
+
+            />
+
+            <Route
+                path="/about"
+                element={
+                    <>
+                    <Header/>
+                    <About/>
+                    </>
+                }
+
+            />
+
+            <Route path='*' element={<>
+              <Error />
+            </>}
+            />
+        </Routes>
     </>
 
  )

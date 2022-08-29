@@ -25,13 +25,12 @@
     margin: 0 auto; 
 }
 
-.main-header > ul > li{
- outline: none;
- text-decoration: none;
- list-style: none;
- font-size: 25px;
- cursor: pointer;
-
+.link{
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .counter-parent{
@@ -55,3 +54,28 @@
     padding: 10px 40px;
     margin-top: 5px;
 }
+
+.content-home h1{
+   text-align: left;
+   padding-top: 10%;
+   font-size: 40px;
+
+}
+.content-home h2{
+    text-align: left;
+    padding-top: 3%;
+}
+.main-child{
+    padding-top: 21%;
+    padding-left: 90%;
+}
+
+.main-child button{
+    background: transparent;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin-top: 5px;
+    
+}
+
